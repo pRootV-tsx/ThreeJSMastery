@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'SF Pro', monospace;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	border: 1ps solid red;
+	background-color: white;
+}
