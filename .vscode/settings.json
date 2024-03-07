@@ -1,0 +1,9 @@
+{
+	"files.autoSave": "afterDelay",
+	"editor.fontSize": 16,
+	"editor.fontFamily": "\"JetBrains Mono\", serif",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "bounded",
+	"terminal.integrated.tabs.defaultColor": null,
+	"workbench.startupEditor": "readme"
+}

@@ -3,7 +3,11 @@ import './style.css'
 
 /**
  * Practice on Own!
- * Basics Things : Scene, Camera and Rendere
+ * Basics Things : Scene, Camera and Renderer
+ *
+ * Mesh : Geometry & Material
+ * Camera : FOV, Aspect, Far, Near
+ * Renderer : Size the renderer size!
  * */
 
 const scene = new Three.Scene()
@@ -19,10 +23,16 @@ const camera = new Three.PerspectiveCamera(
 	100 //Far
 )
 
-const renderer = new Three.WebGLRenderer()
-renderer.setSize(sizes.width, sizes.height, false)
+// Initiate the Canvas
+const canvas = document.getElementById('threejs')
+console.log(canvas)
 
-document.body.appendChild(renderer.domElement)
+// Initiate the Rendere
+const renderer = new Three.WebGLRenderer({
+	canvas
+})
+
+renderer.setSize(sizes.width, sizes.height)
 
 /* 
 A 3d Object (here,Mesh) has two things -- Geometry, Material
